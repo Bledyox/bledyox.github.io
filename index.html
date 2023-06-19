@@ -1,27 +1,53 @@
 <!doctype html>
-<html class="no-js" lang="">
 
-<head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <meta name="theme-color" content="#fafafa">
-</head>
+<html class="no-js" lang="de">
 
-<body>
-  <a href="/gravistex">Gravistex</a>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>Bledyox</title>
+    <meta name="description" content="Portfolio von Sascha M. Schumacher aka Bledyox">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Bledyox">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="bledyox.github.io">
+    <meta property="og:image" content="icon.png">
+    <link rel="manifest" href="manifest.json" crossorigin="use-credentials">
+    <link rel="icon" type="image/svg+xml" href="svg/howling-wolf.svg">
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <body>
+    <header>
+      <img id="theme-image" src="svg/empty.svg" alt="empty" class="svg-button" onclick="themizator.toggleTheme()">
+    </header>
+    <main>
+      <div class="menu">
+        <div class="inner">
+          <img src="svg/howling-wolf.svg" alt="wolf" style="height: 42vmin; filter: grayscale(1);">
+        </div>
+      </div>
+      Projekte: <a href="/gravistex"><h2>Gravistex</h2></a>
+    </main>
+    <footer>
+      <h6>© 2023 Sascha M. Schumacher. All rights reserved.</h6>
+      <div class="horizontal-flex no-list-style">
+        <a href="https://github.com/Bledyox">
+          <img src="svg/github.svg" alt="GitHub" class="svg-button">
+        </a>
+        <a href="https://www.linkedin.com/in/sascha-martin-schumacher-7782121a2/">
+          <img src="svg/linkedin.svg" alt="LinkedIn" class="svg-button">
+        </a>
+        <a href="https://twitter.com/bledyox">
+          <img src="svg/twitter.svg" alt="Twitter" class="svg-button">
+        </a>
+      </div>
+    </footer>
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/themizator.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 
 </html>
