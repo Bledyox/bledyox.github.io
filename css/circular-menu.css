@@ -1,0 +1,35 @@
+.circular-menu {
+  --item-size: 14vmin;
+  --logo-size: calc(4 * var(--item-size));
+  --item-space: .32;
+  --radius: calc(.5 * (1 + var(--item-space)) * var(--item-size) / var(--item-padding));
+  --size: calc(2 * var(--radius) + var(--item-size));
+  position: relative;
+  width: var(--size);
+  height: var(--size);
+}
+
+.circular-menu > * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.circular-menu > img {
+  height: var(--logo-size);
+  width: var(--logo-size);
+  margin: calc(-.5 * var(--logo-size));
+  filter: invert(16%) sepia(79%) saturate(475%) hue-rotate(1deg) brightness(92%) contrast(87%);
+}
+
+.circular-menu > a {
+  --degree: calc(var(--i) * 360deg / var(--item-count) + var(--item-rotate));
+  height: var(--item-size);
+  width: var(--item-size);
+  margin: calc(-.5 * var(--item-size));
+  transform: rotate(var(--degree)) translate(var(--radius)) rotate(calc(-1 * var(--degree)));
+}

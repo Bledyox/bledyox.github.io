@@ -16,34 +16,37 @@
     <link rel="apple-touch-icon" href="icon.png">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/circular-menu.css">
   </head>
 
   <body>
     <header>
+      <h1>Sascha M. Schumacher</h1>
       <img id="theme-image" src="svg/empty.svg" alt="empty" class="svg-button" onclick="themizator.toggleTheme()">
     </header>
     <main>
-      <div class="menu">
-        <div class="inner">
-          <img src="svg/howling-wolf.svg" alt="wolf" style="height: 42vmin; filter: grayscale(1);">
-        </div>
+      <div class="circular-menu" style="--item-count: 6; --item-padding: .24; --item-rotate: -30deg;">
+        <img src="svg/howling-wolf.svg" alt="0" class="circular-logo">
+        <a href="https://github.com/Bledyox" style="--i: 1">
+          <img src="svg/github.svg" alt="GitHub" class="svg-button expand-half">
+        </a>
+        <a href="https://www.linkedin.com/in/sascha-martin-schumacher-7782121a2/" style="--i: 2">
+          <img src="svg/linkedin.svg" alt="LinkedIn" class="svg-button expand-half">
+        </a>
+        <a href="https://twitter.com/bledyox" style="--i: 3">
+          <img src="svg/twitter.svg" alt="Twitter" class="svg-button expand-half">
+        </a>
+        <a href="html/projects.html" style="--i: 4">
+          <h2 class="text-button center-text">Projekte</h2>
+        </a>
+        <a href="html/about.html" style="--i: 5">
+          <h2 class="text-button center-text">Über mich</h2>
+        </a>
+        <a href="html/skills.html" style="--i: 6">
+          <h2 class="text-button center-text">Fähigkeiten</h2>
+        </a>
       </div>
-      Projekte: <a href="/gravistex"><h2>Gravistex</h2></a>
     </main>
-    <footer>
-      <h6>© 2023 Sascha M. Schumacher. All rights reserved.</h6>
-      <div class="horizontal-flex no-list-style">
-        <a href="https://github.com/Bledyox">
-          <img src="svg/github.svg" alt="GitHub" class="svg-button">
-        </a>
-        <a href="https://www.linkedin.com/in/sascha-martin-schumacher-7782121a2/">
-          <img src="svg/linkedin.svg" alt="LinkedIn" class="svg-button">
-        </a>
-        <a href="https://twitter.com/bledyox">
-          <img src="svg/twitter.svg" alt="Twitter" class="svg-button">
-        </a>
-      </div>
-    </footer>
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/themizator.js"></script>
