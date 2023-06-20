@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Portfolio",
+    "desc": "",
+    "img": "../svg/howling-wolf.svg",
+    "link": "https://bledyox.github.io"
+  },
+  {
+    "title": "Gravistex",
+    "desc": "Einige WebGL Visualisierungen für das Modul \"Graphical Visualisation Technologies\" meines Masterstudiums in Medieninformatik.",
+    "img": "https://raw.githubusercontent.com/Bledyox/gravistex/master/img/disc/frame.svg",
+    "link": "https://bledyox.github.io/gravistex"
+  },
+  {
+    "title": "EasyDo",
+    "desc": "Eine Todo-Listen-App für das Modul \"Mobile Application Development\" meines Masterstudiums in Medieninformatik.",
+    "img": "https://github.com/Bledyox/easy_do/blob/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png?raw=true",
+    "link": "https://github.com/Bledyox/easy_do"
+  },
+  {
+    "title": "Heartless",
+    "desc": "Ein kleines Spiel für das Modul \"Game Design\" meines Masterstudiums in Medieninformatik.",
+    "img": "https://media.githubusercontent.com/media/Bledyox/heartless/master/Assets/Graphics/Sprites/Heart_5.png",
+    "link": "https://github.com/Bledyox/heartless"
+  },
+  {
+    "title": "Pong42",
+    "desc": "Ein kleines Spiel.",
+    "img": "../svg/table-tennis.svg",
+    "link": "https://github.com/Bledyox/pong_42"
+  },
+  {
+    "title": "Numsyscon",
+    "desc": "Ein Numeral System Converter.",
+    "img": "../svg/hexadecimal.svg",
+    "link": "https://github.com/Bledyox/pong_42"
+  },
+  {
+    "title": "Klixxer",
+    "desc": "Ein kleines Tool für einen Seniorenclub, um die Maussteuerung zu üben.",
+    "img": "../svg/cursor-pointer.svg",
+    "link": "https://github.com/Bledyox/pong_42"
+  }
+]

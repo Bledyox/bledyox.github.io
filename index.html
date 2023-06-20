@@ -16,33 +16,32 @@
     <link rel="apple-touch-icon" href="icon.png">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/circular-menu.css">
+    <link rel="stylesheet" href="css/circle-menu.css">
   </head>
 
   <body>
     <header>
-      <h1>Sascha M. Schumacher</h1>
       <img id="theme-image" src="svg/empty.svg" alt="empty" class="svg-button" onclick="themizator.toggleTheme()">
     </header>
     <main>
-      <div class="circular-menu" style="--item-count: 6; --item-padding: .24; --item-rotate: -30deg;">
-        <img src="svg/howling-wolf.svg" alt="0" class="circular-logo">
-        <a href="https://github.com/Bledyox" style="--i: 1">
+      <div id="circle-menu" style="--item-count: 6; --item-padding: .24; --item-rotate: -30deg;">
+        <img src="svg/howling-wolf.svg" alt="0" class="circle-center gold-filter">
+        <a href="https://github.com/Bledyox" class="circle-item" style="--i: 1">
           <img src="svg/github.svg" alt="GitHub" class="svg-button expand-half">
         </a>
-        <a href="https://www.linkedin.com/in/sascha-martin-schumacher-7782121a2/" style="--i: 2">
+        <a href="https://www.linkedin.com/in/sascha-martin-schumacher-7782121a2/" class="circle-item" style="--i: 2">
           <img src="svg/linkedin.svg" alt="LinkedIn" class="svg-button expand-half">
         </a>
-        <a href="https://twitter.com/bledyox" style="--i: 3">
-          <img src="svg/twitter.svg" alt="Twitter" class="svg-button expand-half">
+        <a href="https://twitter.com/bledyox" class="circle-item" style="--i: 3">
+          <img src="svg/twitter.svg" alt="Twitter" class="svg-button expand-half animation">
         </a>
-        <a href="html/projects.html" style="--i: 4">
+        <a href="html/projects.html" class="circle-item" style="--i: 4">
           <h2 class="text-button center-text">Projekte</h2>
         </a>
-        <a href="html/about.html" style="--i: 5">
+        <a href="html/about.html" class="circle-item" style="--i: 5">
           <h2 class="text-button center-text">Über mich</h2>
         </a>
-        <a href="html/skills.html" style="--i: 6">
+        <a href="html/skills.html" class="circle-item" style="--i: 6">
           <h2 class="text-button center-text">Fähigkeiten</h2>
         </a>
       </div>

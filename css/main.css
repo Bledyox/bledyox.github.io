@@ -1,30 +1,32 @@
 :root {
   --horizontal-padding: .8vmin;
   --vertical-padding: .8vmin;
+  --primary-color: rgba(218, 165, 32, 1);
+  --primary-color-filter: invert(64%) sepia(79%) saturate(475%) hue-rotate(1deg) brightness(92%) contrast(87%);
+  --surface-blur: blur(2vmin);
 }
 
 :root, :root[data-theme = 'dark'] {
   --background-color: rgba(42, 42, 42, 1);
   --background-gradient: radial-gradient(var(--background-color), black);
   --foreground-color: rgba(255, 255, 255, 1);
-  --primary-color: rgba(218, 165, 32, 1);
+  --surface-color: rgba(64, 64, 64, 1);
+  --surface-gradient: radial-gradient(var(--surface-color), var(--background-color));
+  --surface-shadow: 0 0 .2vmin 0 rgba(0, 0, 0, .2);
   --svg-color-filter: invert(1);
 }
 
 :root[data-theme = 'light'] {
-  --background-color: rgba(128, 128, 128, 1);
+  --background-color: rgba(213, 213, 213, 1);
   --background-gradient: radial-gradient(white, var(--background-color));
   --foreground-color: rgba(0, 0, 0, 1);
-  --primary-color: rgba(184, 134, 11, 1);
+  --surface-color: rgba(191, 191, 191, 1);
+  --surface-gradient: radial-gradient(var(--surface-color), var(--background-color));
+  --surface-shadow: 0 0 .2vmin 0 rgba(255, 255, 255, .2);
   --svg-color-filter: invert(0);
 }
 
-::-moz-selection {
-  background: var(--primary-color);
-  text-shadow: none;
-}
-
-::selection {
+::-moz-selection, ::selection {
   background: var(--primary-color);
   text-shadow: none;
 }
@@ -49,7 +51,7 @@ header {
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: right;
   padding: 1.6vmin;
 }
 
@@ -165,4 +167,8 @@ h1 {
 
 .text-button:hover {
   color: var(--primary-color);
+}
+
+.gold-filter {
+  filter: var(--primary-color-filter);
 }
