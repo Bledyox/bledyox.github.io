@@ -38,6 +38,7 @@
 html {
   background: var(--background-color) var(--background-gradient);
   color: var(--foreground-color);
+  overflow: hidden;
 }
 
 body {

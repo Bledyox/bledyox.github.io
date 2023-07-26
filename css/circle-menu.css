@@ -3,7 +3,7 @@
     transform: scale(1);
   }
   50% {
-    transform: scale(1.2);
+    transform: scale(1.4);
   }
   100% {
     transform: scale(1);
@@ -33,10 +33,14 @@
 .circle-item {
   --degree: calc(var(--i) * 360deg / var(--item-count) + var(--item-rotate));
   position: absolute;
+  display: flex;
   top: 50%;
   left: 50%;
   height: var(--item-size);
   width: var(--item-size);
+  font-size: calc(var(--item-size) * .1);
+  justify-content: center;
+  align-items: center;
   margin: calc(-.5 * var(--item-size));
   transform: rotate(var(--degree)) translate(var(--radius)) rotate(calc(var(--degree) * -1));
 }

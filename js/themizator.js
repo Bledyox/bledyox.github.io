@@ -1,6 +1,5 @@
 const themizator = (function () {
 
-
   window.addEventListener('load', () => {
     const storedTheme = localStorage.getItem('theme');
     const mediaTheme = window.matchMedia('(prefers-color-scheme:light').matches ? 'light' : 'dark';
